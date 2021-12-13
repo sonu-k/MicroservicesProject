@@ -5,11 +5,12 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+export dockerpath=sonkumar0895/micro
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-
+docker tag micro:latest sonkumar0895/micro:latest
 # Step 3:
 # Push image to a docker repository
+docker push sonkumar0895/micro:latest
